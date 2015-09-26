@@ -2,52 +2,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Map voting data to Statscan data</title>
+    <link rel="stylesheet" type="text/css" href="voting.css">
+    <title>Map voting data to StatsCan data</title>
 </head>
 <body>
-<h1>Map Voting Data to Statscan Data</h1>
+<h1>Map Voting Data to StatsCan Data</h1>
 <h2>Project Description</h2>
 <p>
-    Create a geospatial database mapping Statscan data to poll level voting data.
+    Create a geospatial database mapping StatsCan data to poll level voting
+    data.  This is slightly more complex than might be obvious because
+    in Canada the census data uses a conic projection and voting data uses
+    Mercator (at lest mostly), so there is projection conversion involved.
+    However, there do appear to be available tools for this problem.
+</p>
+<p>
+    Extending this to other jurisdictions and adding polling data as
+    elections happen will be a long term project.
 </p>
 <h2>Applications</h2>
 <h3>Redistricting</h3>
 <p>
 An app to allow experimenting with different district boundaries.
 </p>
+<p>
+    This will be the primary application using the database.
+</p>
+
+<p>
+    This will start with City of Toronto voting data since there is a
+    redistricting process going on now and there is at least the possibility
+    of a multi member version happening when the Province passes new
+    municipal electoral legislation.
+</p>
+<p>
+    The priority list for extending to other jurisdictions will depend
+    on redistricting actions.
+</p>
 <h3>Campaign Models</h3>
 <p>
-An app to model campaigns, especially multi-member campaigns.
+An app to model campaigns, especially multi-member district campaigns.  This is
+not of as great significance, however, it will be of great use in campaigns
+    for Proportional Representation.
 </p>
-<h2>Institution</h2>
+<h3>Local Projection</h3>
 <p>
-    This will be a charitable organization, building political education tools for the public.
+    An app for projections of local campaigns, designed for reporters.
+    This would be a model that used national (or provincial) demographic
+    polling data and uses that in combination of the local demographics
+    and voting history to project local results.
 </p>
-<p>
-    A board to keep track of things.
-</p>
-<p>
-    A bookeeper/secretary to deal with mail and bills/cheques.
-</p>
-<p>
-    A set of developers to maintain it.
-</p>
-<p>
-    There would be quarterly code review/prgraming sessions.
-    Attending one in a year gives you a vote for the board.
-</p>
-<p>
-    Donating $100 in a year gives you a vote for the board.
-</p>
-<h2>Crowdfunding</h2>
 
-<h3>Target</h3>
-$1,000
-<h3>Rewards</h3>
-<table>
-    <tr><td>$10</td><td>Your name in an online credit list</td></tr>
-    <tr><td>$30</td><td>Early access to an app</td></tr>
-    <tr><td>$100</td><td>Permanent board elector status</td></tr>
-</table>
+<p><a href="institution.html">Institution</a></p>
+<p><a href="institution.html">Institution</a></p>
+<p><a href="crowdfunding.html">crowdfunding</a></p>
 </body>
 </html>
